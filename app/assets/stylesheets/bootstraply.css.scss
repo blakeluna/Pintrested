@@ -1,6 +1,10 @@
 $jumbotron-bg: blue; 
-$navbar-default-bg: white;
+$navbar-default-bg: gray;
 $navbar-default-link-color: black;
 $body-bg: white;  
 @import "bootstrap-sprockets" ;
 @import "bootstrap" ;
+
+.center {
+    text-align: center;
+}
