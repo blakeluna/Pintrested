@@ -5,4 +5,10 @@ class HomeController < ApplicationController
   def about
   end
   
+  def homework
+  end
+  
+  def website_info
+  end   
+  
 end
