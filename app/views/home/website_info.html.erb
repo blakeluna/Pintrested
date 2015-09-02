@@ -1,4 +1,60 @@
-<p>In your <b>“Secret Tips for Applying to Harvest”</b> you stated that I should know something about Harvest, 
-so I spent some time learning the back stories for some of your current employees and reading through your Tech Time blog.  
-I found my way to Danny Wen’s Tumblr page, and two postings he had there are what pushed me to 
-finally put all this together and apply. </p>
+<h3><u>Whats Going on Here?!?!?</u></h3>
+<p>I wanted to use this space to talk a little bit about this website you're using. The bulk of this code was written on a 10 
+day vacation I took earlier in the summer. I knew I was going to be spending alot of time in and out of airports, and just traveling 
+in general, so I thought it would be nice to have a project to work on during that time. I had already been preparing myself mentally to apply to this position, 
+so I opted to pick up a book on Ruby on Rails thinking it might give me some additional persepctive I might be able to use
+when applying. I picked up "Learn Ruby on Rails for Web Development" by John Elder from Amazon and this site is the 
+intended result of that particuar text. I think the easiest thing to do is just to lay out the main componets and highlight some of the concepts that were used to put
+this together:
+
+<p><ul>
+ <b><li>Cloud9, GitHub, and Heroku</li>
+  <li>Bootstrap </li>
+  <li>Devise </li>
+  <li>Scaffolding (CRUD!)</li>
+  <li>User Authentication</li>
+  <li>Table Creation and Database Associations</li>
+  <li>Postgres and SQLite3 </li>
+  <li>Paperclip and ImageMagick</li>
+  <li>Amazon Web Services </li>
+  <li>JQuery Masonry</li></b>
+</ul></p>
+ </p>
+ <p> This site was built as a clone of Pinterest, thats why on the landing page you're seeing a handful of my old vacation photos (Hiking Zion Canyon in Utah for those interested). 
+ As it was explained in the text, building a Pinterest clone was the chosen excerise because it provided exposure to a broad range 
+ of topics, and it plainly illustrated a fundamental building block of creating any type of web app, CRUD (Create, Read,
+ Update, Destroy). At its core I have built an app that will allow someone to create users, log in and out of the app,
+ upload text and images to a database, and edit or delete uploaded content as needed. In compairison to some
+ of the other languages I've learned, Ruby made implementing those mechinisms pretty straighforward. That being said, by no means
+ does completing one web app mean that I am suddenly qaulified to work on your product, but hopefully it shows some initative and at the very least an ability to learn 
+ independently. Also if I'm not mistaken I believe you use/have used AWS and Paperclip for some of your image hosting, so there
+ is some technology overlap there as well. 
+ 
+ 
+ 
+ 
+ </p>
+ 
+ <h3><u>To-Do List</u></h3>
+ <p>This is the first thing I've ever done with Ruby, and I'm sure to the trained eye, it probably shows. 
+ When I was building this site, I subscribed to the theory that if I encountered a hiccup, and it didn't 
+ directly imapct the funtionality of the site, I made note of it and moved on. I wanted to get a "finished product", test its
+ functionality, and then fix the bugs I could reasonably expect to fix being a novice to Ruby. Below I'll highlight a couple of things that
+ need improving, or didn't go exactly to plan, in order of importance.</p>
+ 
+ <p><b>Display Issues</b></p>
+ <p>You'll notice that I currently have it designed so that each page only displays 5 "Pins" per page. I did that specifically to eliminate
+ one of the flaws I encountered and couldn't find a sutable answer to. Lets assume it was set to display 20 pins per page, in 4 rows of 5. 
+ If a user were to upload a photo that wasn't a standard size, i.e. a long and skinny photo or tall and narrow, when that pin was bumped out of
+ the first row, it would cause an issue with the container grid causing the pins not to display correctly. It will cause large offsets seemingly for no reason around the pin, 
+ throwing the other pins out of the nice grid pattern they should be displayed in. This seemed to become an issue when I imnplemented Masonry on top of Bootstrap, which I read online may cause issues. So I'm 
+ not sure if there is a conflict between the two in some way, if the containers need to be adjusted, or if I'm missing a more obvious answer all together. I tired uninstalling and reinstalling, the
+ Masonry set up, but that didn't seem to correct things. My solution to the problem was to limit the number of pins displayed so that a second row was never needed, and that essentially "fixed" the problem.
+ Obviously that is a short term solution to a long term problem and one that directly impacts the visual and interactive feel of the website.</p>
+ 
+ <p><b>Mobile Integration</b></p>
+  
+
+ 
+ 
+ 
