@@ -42,19 +42,34 @@ this together:
  functionality, and then fix the bugs I could reasonably expect to fix being a novice to Ruby. Below I'll highlight a couple of things that
  need improving, or didn't go exactly to plan, in order of importance.</p>
  
- <p><b>Display Issues</b></p>
+ <p><b>Display Issues--Home Page</b></p>
  <p>You'll notice that I currently have it designed so that each page only displays 5 "Pins" per page. I did that specifically to eliminate
  one of the flaws I encountered and couldn't find a sutable answer to. Lets assume it was set to display 20 pins per page, in 4 rows of 5. 
- If a user were to upload a photo that wasn't a standard size, i.e. a long and skinny photo or tall and narrow, when that pin was bumped out of
+ If a user were to upload a photo that wasn't a standard size, i.e. a long and skinny photo/tall and narrow, when that pin was bumped out of
  the first row, it would cause an issue with the container grid causing the pins not to display correctly. It will cause large offsets seemingly for no reason around the pin, 
- throwing the other pins out of the nice grid pattern they should be displayed in. This seemed to become an issue when I imnplemented Masonry on top of Bootstrap, which I read online may cause issues. So I'm 
- not sure if there is a conflict between the two in some way, if the containers need to be adjusted, or if I'm missing a more obvious answer all together. I tired uninstalling and reinstalling, the
+ throwing the other pins out of the nice grid pattern they should be displayed in. This seemed to become an issue when I implemented Masonry on top of Bootstrap, which I read online may cause issues. So I'm 
+ not sure if there is a conflict between the two in some way, if the containers need to be adjusted to accomodate irregular sizes, or if I'm missing a more obvious answer all together. I tried rolling back my code and reinstalling the
  Masonry set up, but that didn't seem to correct things. My solution to the problem was to limit the number of pins displayed so that a second row was never needed, and that essentially "fixed" the problem.
  Obviously that is a short term solution to a long term problem and one that directly impacts the visual and interactive feel of the website.</p>
  
  <p><b>Mobile Integration</b></p>
-  
-
+ <p>If you were to visit this website on a mobile device, at first glance things would appear to be as expected. Once you try to navigate around the site though, you'll see a major problem. 
+ The mobile menu button doesn't work, which makes the site virtually unusable on a mobile device. The menu button on the top right isn't "clickable" for lack of a better term. The book only 
+ included about a paragraph and a half on making the site mobile friendly and instucted me to use the Viewport meta tag to do all the work for me. Well needless to say, it wasn't quite that simple. 
+ I did see that potientially I need to specify a clickable class for my menu, but any and all attempts at getting a straight answer on the subject were unsuccessful. These are the kind of problems that drive me crazy. 
+ I tend to waste massive amounts of time running in circles, when all I need is a quick conversation with someone more expierenced than me and I'm sure it is an easy and straighforward fix. Such are the joys of learning 
+ a new language I suppose.</p>
  
+ <p><b>Wish List</b></p>
+ <p> Outside of those two issues, the actual mechinisms that allow the core functionality of the site seem to be working as needed. Not bad for a first timer huh?! Below are just a couple 
+ things I think would impove the site, but would be considered "luxury" items by me, as they would probably impact user expierence more than functionality.</p>
+  
+ <p><ul>
+ <b><li>Better HTML</li>
+  <li>When viewing pins, allow pins to be displayed in a shadowbox at full size when clicked.</li>
+  <li>When creating a new pin, the attach image container is entirely too elongated.</li>
+  <li>Each page needs a simple footer, as is, the ending of each page seems abrupt.......</li>
+  </b></p>
+ </ul></p>
  
  
